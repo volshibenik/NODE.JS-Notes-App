@@ -1,0 +1,15 @@
+{
+  "name": "hello",
+  "version": "0.2.1",
+  "description": "node training",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sayevich",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "yargs": "^12.0.1"
+  }
+}
