@@ -44,6 +44,7 @@ const getNote = title => {
   const notes = fetchNotes();
   return _.find(notes, { title: title });
 };
+
 module.exports = {
   addNote,
   removeNote,
