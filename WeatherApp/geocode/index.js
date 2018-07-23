@@ -20,8 +20,8 @@ const geocode = (address, callback) => {
       } else if (body.status === "OK") {
         const resultsOb = {
           address: body.results[0].formatted_address,
-          lati: body.results[0].geometry.location.lat,
-          long: body.results[0].geometry.location.lng
+          lat: body.results[0].geometry.location.lat,
+          lng: body.results[0].geometry.location.lng
         };
         callback(undefined, resultsOb);
       } else {
