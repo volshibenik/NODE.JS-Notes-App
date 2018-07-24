@@ -21,7 +21,7 @@ const argv = yargs
 
 console.log(argv);
 
-geocode(argv.a, (errorMessage, results) => {
+/* geocode(argv.a, (errorMessage, results) => {
   if (errorMessage) {
     console.log(errorMessage);
   } else {
@@ -29,3 +29,11 @@ geocode(argv.a, (errorMessage, results) => {
     weather(results, callback);
   }
 });
+ */
+geocode(argv.a).then(
+  res => {
+    console.log(JSON.stringify(res));
+    weather(res, callback);
+  },
+  rej => console.log(rej)
+);
